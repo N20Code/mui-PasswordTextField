@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import PasswordTextField from '../dist';
+import PasswordTextField from '../src';
 
 const App = () => {
   return (
     <div>
-      <PasswordTextField />
+      <PasswordTextField InputProps={{ withToggleVisibility: <>ab</> }}/>
     </div>
   );
 };

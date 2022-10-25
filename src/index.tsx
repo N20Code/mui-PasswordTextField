@@ -1,13 +1,19 @@
 import React, { useState } from 'react'
-import { IconButtonProps, TextField, TextFieldProps } from '@mui/material'
+import { IconButtonProps, InputProps, TextField, TextFieldProps } from '@mui/material'
 
 import ToggleVisibility from './components/ToggleVisibility'
 
-type Props = TextFieldProps & {
-  iconButtonProps?: IconButtonProps
+type NewInputProps = InputProps & {
+  withToggleVisibility?: React.ReactNode
 }
 
-export default function PasswordTextField({ iconButtonProps, ...textFieldProps }: Props) {
+
+type Props = TextFieldProps & {
+  iconButtonProps?: IconButtonProps,
+  InputProps?: NewInputProps
+}
+
+export default function PasswordTextField({ iconButtonProps, InputProps, ...textFieldProps }: Props) {
   const [visible, setVisible] = useState(false) // If users password input is visible or not
 
   return <TextField
@@ -17,7 +23,9 @@ export default function PasswordTextField({ iconButtonProps, ...textFieldProps }
         visible={visible}
         setVisible={setVisible}
         iconButtonProps={iconButtonProps}
-      />
+        withToggleVisibility={InputProps?.withToggleVisibility}
+      />,
+      ...InputProps
     }}
     
     {...textFieldProps}
