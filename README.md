@@ -37,10 +37,10 @@ export default App;
 
 ### InputProps
 
-| **Name**             | **Type**         | **Description**                                     |
-| -------------------- | ---------------- | --------------------------------------------------- |
-| withToggleVisibility | React Elemet     | Appears on the left of the Toggle Visibility Button |
-| -Continue-           | MUI's InputProps | Uses MUI Input Props here                           |
+| **Name**             | **Type**         | **Description**                                                          |
+| -------------------- | ---------------- | ------------------------------------------------------------------------ |
+| withToggleVisibility | React Elemet     | Appears on the left of the Toggle Visibility Button                      |
+| -Continue-           | MUI's InputProps | Uses MUI Input Props [here](https://mui.com/material-ui/api/text-field/) |
 
 ## License
 
