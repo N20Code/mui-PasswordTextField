@@ -1,10 +1,6 @@
-# Material-UI `MUI` Password Text Field
-
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+# MUI-PasswordTextField
 
 > This TSDX setup is meant for developing React component libraries (not apps!) that can be published to NPM. If you’re looking to build a React-based app, you should use `create-react-app`, `razzle`, `nextjs`, `gatsby`, or `react-static`.
-
-> If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
 
 ## Installation
 
@@ -20,8 +16,32 @@ yarn add mui-passwordtextfield
 
 ## Usage
 
-## Props
+```js
+import PasswordTextField from 'mui-passwordtextfield';
 
-| the rest | [Text Field](https://mui.com/material-ui/api/text-field/#props) |
-| -------- | --------------------------------------------------------------- |
-| a        | a                                                               |
+const App = () => {
+  return <PasswordTextField />;
+};
+
+export default App;
+```
+
+## API
+
+### `PasswordTextField` Element
+
+| **Name**        | **Type**        | **Description**                                                                 |
+| --------------- | --------------- | ------------------------------------------------------------------------------- |
+| iconButtonProps | IconButtonProps | Uses MUI Icon Button Props [here](https://mui.com/material-ui/api/icon-button/) |
+| InputProps      | InputProps      | To change the properties of the input                                           |
+
+### InputProps
+
+| **Name**             | **Type**         | **Description**                                     |
+| -------------------- | ---------------- | --------------------------------------------------- |
+| withToggleVisibility | React Elemet     | Appears on the left of the Toggle Visibility Button |
+| -Continue-           | MUI's InputProps | Uses MUI Input Props here                           |
+
+## License
+
+The files included in this repository are licensed under the MIT license.

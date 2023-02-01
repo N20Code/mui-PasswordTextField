@@ -10,6 +10,17 @@
   "engines": {
     "node": ">=10"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathenDT/mui-PasswordTextField.git"
+  },
+  "homepage": "https://github.com/NathenDT/mui-PasswordTextField#readme",
+  "keywords": [
+    "material-ui",
+    "MUI",
+    "password",
+    "react"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
